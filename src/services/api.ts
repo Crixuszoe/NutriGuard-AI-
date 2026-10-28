@@ -500,3 +500,18 @@ export async function triggerAnomalyAdminApi(data: Partial<SystemAnomalyAlert>):
   });
   return res.json();
 }
+
+export async function transcribeVoiceApi(
+  audioBase64: string,
+  mimeType?: string
+): Promise<{ success: boolean; text: string }> {
+  const res = await fetch('/api/transcribe-voice', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ audioData: audioBase64, mimeType }),
+  });
+  if (!res.ok) {
+    throw new Error(`Voice transcription failed (${res.status})`);
+  }
+  return res.json();
+}
