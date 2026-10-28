@@ -1,0 +1,11 @@
+{
+  "name": "NutriGuard AI — Food Security & Nutrition",
+  "description": "AI-powered mobile food security and nutritional analysis app with real-time poison detection, chemical analysis, ingredient breakdown, and personalized health guidance.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

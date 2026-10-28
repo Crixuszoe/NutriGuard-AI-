@@ -1,0 +1,613 @@
+{
+  "version": "2.4.0",
+  "lastUpdated": "2026-10-28T05:19:05.455Z",
+  "scans": [
+    {
+      "foodName": "Pacific Salmon & Mediterranean Quinoa Bowl",
+      "category": "Whole Foods & Lean Omega-3",
+      "isSafe": true,
+      "safetyScore": 96,
+      "riskLevel": "safe",
+      "poisonAnalysis": {
+        "detected": false,
+        "poisonName": "None Detected",
+        "chemicalFormula": "N/A",
+        "estimatedConcentrationPpm": 0,
+        "estimatedTimeAdded": "Purity verified at scan time",
+        "detectionConfidence": 99,
+        "severityLevel": "Zero Risk",
+        "healthRisks": [],
+        "symptoms": [],
+        "immediateEmergencyMeasures": [
+          "No hazardous chemicals, pesticides, or microbial toxins identified."
+        ],
+        "antidoteOrTreatment": "None needed. Safe for consumption.",
+        "emergencyHotlineAdvice": "All toxicological markers within clean human safety limits."
+      },
+      "ingredientAnalysis": {
+        "ingredients": [
+          {
+            "name": "Wild Caught Atlantic Salmon",
+            "weightGrams": 140,
+            "percentage": 38,
+            "qualityScore": 96,
+            "isOrganic": true,
+            "isAllergen": true,
+            "allergenGroup": "Fish",
+            "isAdditive": false,
+            "additiveCode": "",
+            "purpose": "Premium protein & Omega-3s"
+          },
+          {
+            "name": "Organic Tricolor Quinoa",
+            "weightGrams": 100,
+            "percentage": 27,
+            "qualityScore": 94,
+            "isOrganic": true,
+            "isAllergen": false,
+            "allergenGroup": "None",
+            "isAdditive": false,
+            "additiveCode": "",
+            "purpose": "Complex slow-digesting carbs"
+          },
+          {
+            "name": "Hass Avocado Chunks",
+            "weightGrams": 60,
+            "percentage": 16,
+            "qualityScore": 92,
+            "isOrganic": true,
+            "isAllergen": false,
+            "allergenGroup": "None",
+            "isAdditive": false,
+            "additiveCode": "",
+            "purpose": "Monounsaturated healthy fats"
+          },
+          {
+            "name": "Baby Spinach & Arugula",
+            "weightGrams": 50,
+            "percentage": 14,
+            "qualityScore": 95,
+            "isOrganic": true,
+            "isAllergen": false,
+            "allergenGroup": "None",
+            "isAdditive": false,
+            "additiveCode": "",
+            "purpose": "Micronutrient density & nitrates"
+          },
+          {
+            "name": "Cold-Pressed Extra Virgin Olive Oil",
+            "weightGrams": 15,
+            "percentage": 4,
+            "qualityScore": 97,
+            "isOrganic": true,
+            "isAllergen": false,
+            "allergenGroup": "None",
+            "isAdditive": false,
+            "additiveCode": "",
+            "purpose": "Polyphenols & dressing"
+          },
+          {
+            "name": "Flaked Sea Salt & Lemon",
+            "weightGrams": 4,
+            "percentage": 1,
+            "qualityScore": 90,
+            "isOrganic": true,
+            "isAllergen": false,
+            "allergenGroup": "None",
+            "isAdditive": false,
+            "additiveCode": "",
+            "purpose": "Natural seasoning"
+          }
+        ],
+        "freshnessScore": 95,
+        "artificialAdditivesCount": 0,
+        "detectedAllergens": [
+          "Fish (Salmon)"
+        ],
+        "preservativesPresent": [
+          "None detected - 100% natural composition"
+        ]
+      },
+      "nutritionalAnalysis": {
+        "servingSizeGrams": 370,
+        "calories": 540,
+        "proteinGrams": 38.5,
+        "totalFatGrams": 24,
+        "saturatedFatGrams": 3.8,
+        "transFatGrams": 0,
+        "oilPercentage": 6.5,
+        "carbsGrams": 42,
+        "dietaryFiberGrams": 8.2,
+        "totalSugarsGrams": 2.5,
+        "sodiumMilligrams": 420,
+        "cholesterolMilligrams": 68,
+        "potassiumMilligrams": 890,
+        "calciumMilligrams": 75,
+        "ironMilligrams": 3.4,
+        "unhealthyFlags": [],
+        "macroRatio": {
+          "proteinPct": 29,
+          "carbsPct": 31,
+          "fatPct": 40
+        }
+      },
+      "spoilageAndExpiry": {
+        "freshnessState": "fresh",
+        "daysUntilExpiry": 3,
+        "visualSpoilageIndicators": [
+          "Vibrant natural pigmentation",
+          "Firm tissue elasticity",
+          "Zero oxidation or off-odors"
+        ],
+        "bacterialOrMoldRisk": "Extremely Low (<10 CFU/g)",
+        "recommendedStorage": "Keep chilled at 36°F - 38°F (2°C - 3°C) in an airtight container."
+      },
+      "personalizedHealthAdvice": {
+        "fitForUserGoal": true,
+        "goalAlignmentScore": 95,
+        "personalizedInsight": "Superb nutrient density rich in anti-inflammatory EPA/DHA Omega-3 fatty acids, potassium, and clean sustained energy.",
+        "portionAdvice": "1 Full Bowl (370g) aligns smoothly with your daily targets.",
+        "diabeticFriendly": true,
+        "heartHealthy": true,
+        "healthierAlternatives": [
+          "Swap quinoa for cauliflower rice if strictly ketogenic (<10g carbs)",
+          "Add extra leafy greens for added folate and magnesium"
+        ]
+      },
+      "waterOrLiquidQuality": {
+        "applicable": false,
+        "phLevel": 7.4,
+        "tdsPpm": 142,
+        "chlorineRisk": "Non-detectable (<0.01 ppm)",
+        "heavyMetalsStatus": "Negative for Lead, Cadmium, Arsenic (<0.001 ppm)",
+        "bacterialColiformStatus": "0 CFU / 100 mL (Pure)",
+        "drinkabilityStatus": "Exceptional Purity - Meets WHO & EPA Gold Standards"
+      },
+      "blockchainTraceability": {
+        "batchId": "TRACE-US-PACIFIC-98231",
+        "originFarm": "Sitka Sound Marine Stewardship Certified Fishery & Yakima Organics",
+        "harvestDate": "10/26/2026",
+        "inspectionCertificateId": "ISO-22000-FS-9428",
+        "immutableLedgerHash": "0x4f8291a9b4092bc13d8011244ea98c25791ab42c94301fa38210984920bc82",
+        "certifications": [
+          "MSC Certified Sustainable",
+          "Non-GMO Project Verified",
+          "USDA Organic Quinoa"
+        ],
+        "tamperEvidentStatus": "Cryptographically Verified on Ethereum Supply-Chain Ledger"
+      },
+      "userEmail": "alex.mercer@nutriguard.ai",
+      "id": "scan-mvrnzoq7-h68x",
+      "scannedAt": "2026-10-28T05:19:05.455Z",
+      "encryptionHash": "AES256-GCM-7536eba9ef9e68e0"
+    },
+    {
+      "id": "scan-init-01",
+      "foodName": "Pacific Salmon & Mediterranean Quinoa Bowl",
+      "category": "Whole Foods & Lean Omega-3",
+      "isSafe": true,
+      "safetyScore": 96,
+      "riskLevel": "safe",
+      "scannedAt": "2026-10-28T01:18:07.873Z",
+      "userEmail": "supersoftfirm@gmail.com",
+      "poisonAnalysis": {
+        "detected": false,
+        "poisonName": "None Detected",
+        "chemicalFormula": "N/A",
+        "estimatedConcentrationPpm": 0,
+        "estimatedTimeAdded": "Certified Pure at Scan Time",
+        "detectionConfidence": 99,
+        "severityLevel": "Zero Risk",
+        "healthRisks": [],
+        "symptoms": [],
+        "immediateEmergencyMeasures": [
+          "No hazardous chemicals or bacterial toxins identified."
+        ],
+        "antidoteOrTreatment": "None required.",
+        "emergencyHotlineAdvice": "Safe for consumption."
+      },
+      "ingredientAnalysis": {
+        "ingredients": [
+          {
+            "name": "Wild Caught Atlantic Salmon",
+            "weightGrams": 140,
+            "percentage": 38,
+            "qualityScore": 96,
+            "isOrganic": true,
+            "isAllergen": true,
+            "allergenGroup": "Fish"
+          },
+          {
+            "name": "Organic Tricolor Quinoa",
+            "weightGrams": 100,
+            "percentage": 27,
+            "qualityScore": 94,
+            "isOrganic": true,
+            "isAllergen": false
+          },
+          {
+            "name": "Hass Avocado Chunks",
+            "weightGrams": 60,
+            "percentage": 16,
+            "qualityScore": 92,
+            "isOrganic": true,
+            "isAllergen": false
+          },
+          {
+            "name": "Baby Spinach & Arugula",
+            "weightGrams": 50,
+            "percentage": 14,
+            "qualityScore": 95,
+            "isOrganic": true,
+            "isAllergen": false
+          }
+        ],
+        "freshnessScore": 95,
+        "artificialAdditivesCount": 0,
+        "detectedAllergens": [
+          "Fish (Salmon)"
+        ],
+        "preservativesPresent": [
+          "None detected - 100% natural composition"
+        ]
+      },
+      "nutritionalAnalysis": {
+        "servingSizeGrams": 370,
+        "calories": 540,
+        "proteinGrams": 38.5,
+        "totalFatGrams": 24,
+        "saturatedFatGrams": 3.8,
+        "transFatGrams": 0,
+        "oilPercentage": 6.5,
+        "carbsGrams": 42,
+        "dietaryFiberGrams": 8.2,
+        "totalSugarsGrams": 2.5,
+        "sodiumMilligrams": 420,
+        "cholesterolMilligrams": 68,
+        "potassiumMilligrams": 890,
+        "calciumMilligrams": 75,
+        "ironMilligrams": 3.4,
+        "unhealthyFlags": [],
+        "macroRatio": {
+          "proteinPct": 29,
+          "carbsPct": 31,
+          "fatPct": 40
+        }
+      },
+      "spoilageAndExpiry": {
+        "freshnessState": "fresh",
+        "daysUntilExpiry": 3,
+        "visualSpoilageIndicators": [
+          "Vibrant natural pigmentation",
+          "Firm tissue elasticity"
+        ],
+        "bacterialOrMoldRisk": "Extremely Low (<10 CFU/g)",
+        "recommendedStorage": "Keep chilled at 36°F - 38°F (2°C - 3°C)."
+      },
+      "personalizedHealthAdvice": {
+        "fitForUserGoal": true,
+        "goalAlignmentScore": 95,
+        "personalizedInsight": "High dietary fiber and omega-3 fatty acids for sustained energy and cellular health.",
+        "portionAdvice": "1 Full Bowl aligns with daily targets.",
+        "diabeticFriendly": true,
+        "heartHealthy": true,
+        "healthierAlternatives": [
+          "Swap quinoa for cauliflower rice if ketogenic."
+        ]
+      },
+      "blockchainTraceability": {
+        "batchId": "TRACE-PACIFIC-98231",
+        "originFarm": "Sitka Sound Marine Stewardship Fishery",
+        "harvestDate": "10/27/2026",
+        "inspectionCertificateId": "ISO-22000-FS-9428",
+        "immutableLedgerHash": "0x4f8291a9b4092bc13d8011244ea98c25791ab42c94301fa38210984920bc82",
+        "certifications": [
+          "MSC Certified Sustainable",
+          "USDA Organic Quinoa"
+        ],
+        "tamperEvidentStatus": "Cryptographically Verified on Ethereum Supply-Chain Ledger"
+      },
+      "encryptionHash": "AES256-GCM-7f891b2c4019a84d2"
+    },
+    {
+      "id": "scan-init-02",
+      "foodName": "Wild Woodland Mushrooms (Amanita Lookalike)",
+      "category": "Fungi / Wild Harvest",
+      "isSafe": false,
+      "safetyScore": 18,
+      "riskLevel": "critical",
+      "scannedAt": "2026-10-27T17:18:07.893Z",
+      "userEmail": "supersoftfirm@gmail.com",
+      "poisonAnalysis": {
+        "detected": true,
+        "poisonName": "Amatoxins (alpha-Amanitin) & Phalloidin",
+        "chemicalFormula": "C39H54N10O14S",
+        "estimatedConcentrationPpm": 142.5,
+        "estimatedTimeAdded": "Harvested within 6-12 hours",
+        "detectionConfidence": 96,
+        "severityLevel": "Extreme (Cellular / Hepatic Damage Risk)",
+        "healthRisks": [
+          "Irreversible liver & kidney cell necrosis",
+          "Severe hypovolemic shock"
+        ],
+        "symptoms": [
+          "Violent abdominal cramps",
+          "Profuse watery diarrhea",
+          "Nausea and vomiting"
+        ],
+        "immediateEmergencyMeasures": [
+          "DO NOT CONSUME OR TASTE.",
+          "Seek emergency hospital medical attention immediately.",
+          "Preserve sample in sealed container for hospital toxicology testing."
+        ],
+        "antidoteOrTreatment": "Intravenous Silibinin (Legalon-SIL) and high-dose Penicillin G.",
+        "emergencyHotlineAdvice": "Call Poison Control Center immediately at 1-800-222-1222."
+      },
+      "ingredientAnalysis": {
+        "ingredients": [
+          {
+            "name": "Wild Cap Mushrooms",
+            "weightGrams": 180,
+            "percentage": 85,
+            "qualityScore": 30,
+            "isOrganic": true,
+            "isAllergen": false
+          },
+          {
+            "name": "Unidentified Mycological Peptides",
+            "weightGrams": 1,
+            "percentage": 5,
+            "qualityScore": 10,
+            "isOrganic": false,
+            "isAllergen": false,
+            "isAdditive": true,
+            "additiveCode": "BIOTOX"
+          }
+        ],
+        "freshnessScore": 62,
+        "artificialAdditivesCount": 1,
+        "detectedAllergens": [],
+        "preservativesPresent": [
+          "Raw biological wild contaminant"
+        ]
+      },
+      "nutritionalAnalysis": {
+        "servingSizeGrams": 200,
+        "calories": 145,
+        "proteinGrams": 4.2,
+        "totalFatGrams": 11.5,
+        "saturatedFatGrams": 1.8,
+        "transFatGrams": 0,
+        "oilPercentage": 8.5,
+        "carbsGrams": 7,
+        "dietaryFiberGrams": 2.8,
+        "totalSugarsGrams": 1.5,
+        "sodiumMilligrams": 380,
+        "cholesterolMilligrams": 0,
+        "potassiumMilligrams": 490,
+        "calciumMilligrams": 22,
+        "ironMilligrams": 1.9,
+        "unhealthyFlags": [
+          "CRITICAL: Biotoxin Contamination Detected"
+        ],
+        "macroRatio": {
+          "proteinPct": 12,
+          "carbsPct": 20,
+          "fatPct": 68
+        }
+      },
+      "spoilageAndExpiry": {
+        "freshnessState": "hazardous",
+        "daysUntilExpiry": 0,
+        "visualSpoilageIndicators": [
+          "Irregular gill discoloration",
+          "Veil tear pattern of Amanita"
+        ],
+        "bacterialOrMoldRisk": "Secondary anaerobic risk",
+        "recommendedStorage": "Biohazard quarantine or hazardous disposal. Do not compost."
+      },
+      "personalizedHealthAdvice": {
+        "fitForUserGoal": false,
+        "goalAlignmentScore": 0,
+        "personalizedInsight": "High fatal risk of hepatotoxicity. Do not consume.",
+        "portionAdvice": "0g - Strictly Prohibited",
+        "diabeticFriendly": false,
+        "heartHealthy": false,
+        "healthierAlternatives": [
+          "Commercial Cremini Mushrooms",
+          "Store-inspected King Oyster"
+        ]
+      },
+      "blockchainTraceability": {
+        "batchId": "UNKNOWN-WILD-FORAGED",
+        "originFarm": "Unregulated Woodland",
+        "harvestDate": "Recent",
+        "inspectionCertificateId": "FAILED - NO CERTIFICATE",
+        "immutableLedgerHash": "0x89e27cfa0981bdf942918bbda7e53a992bc0128947fcd31",
+        "certifications": [
+          "NON-CERTIFIED"
+        ],
+        "tamperEvidentStatus": "Unverified Origin"
+      },
+      "encryptionHash": "AES256-GCM-8c102a9b3419df012"
+    }
+  ],
+  "community_rooms": [
+    {
+      "id": "room-safety-alerts",
+      "name": "Food Safety & Biotoxins Watch",
+      "description": "Active broadcast and peer analysis of suspected poisons, chemical adulterants, and toxic mushroom forages.",
+      "topic": "food_safety",
+      "isPrivate": false,
+      "creatorName": "NutriGuard Clinical Lab",
+      "createdAt": "2026-10-24T05:18:07.893Z",
+      "memberCount": 142,
+      "isOfficial": true
+    },
+    {
+      "id": "room-nutrition-tips",
+      "name": "Nutrition & Macro Optimization",
+      "description": "Peer-reviewed dietary strategies, portion management, diabetic-friendly glycemic swaps, and clean eating habits.",
+      "topic": "nutrition_tips",
+      "isPrivate": false,
+      "creatorName": "Dietary Advisory Board",
+      "createdAt": "2026-10-25T05:18:07.893Z",
+      "memberCount": 98,
+      "isOfficial": true
+    },
+    {
+      "id": "room-allergy-shield",
+      "name": "Severe Allergens Private Shield",
+      "description": "Confidential group for anaphylaxis risk, cross-contact protocol in restaurants, and school allergen safety.",
+      "topic": "allergen_alert",
+      "isPrivate": true,
+      "passcode": "SAFEFOOD",
+      "creatorName": "Allergy Advocates Network",
+      "createdAt": "2026-10-26T05:18:07.893Z",
+      "memberCount": 34,
+      "isOfficial": true
+    },
+    {
+      "id": "room-water-watch",
+      "name": "Municipal & Well Water Purity",
+      "description": "Discussions on water filtration, lead pipe detection, TDS ppm calibrations, and boiling water advisories.",
+      "topic": "water_purity",
+      "isPrivate": false,
+      "creatorName": "Hydration Quality Group",
+      "createdAt": "2026-10-27T05:18:07.893Z",
+      "memberCount": 65,
+      "isOfficial": true
+    }
+  ],
+  "community_messages": [
+    {
+      "id": "msg-01",
+      "roomId": "room-safety-alerts",
+      "authorName": "Dr. Evelyn Vance (Toxicology)",
+      "content": "⚠️ Caution regarding wild foraged mushrooms in the Pacific Northwest this week. Several samples showed high amatoxin peaks on chromatography. Always verify with spectrometry before consuming any white or pale greenish gill specimens.",
+      "createdAt": "2026-10-28T00:18:07.893Z",
+      "tag": "Safety Alert",
+      "isAlertCard": true
+    },
+    {
+      "id": "msg-02",
+      "roomId": "room-safety-alerts",
+      "authorName": "Marcus Miller",
+      "content": "Thanks for the advisory! Just scanned a basket using NutriGuard and it immediately flagged high risk. Preserved the sample in a sealed cooler.",
+      "createdAt": "2026-10-28T03:18:07.893Z",
+      "tag": "Question"
+    },
+    {
+      "id": "msg-03",
+      "roomId": "room-nutrition-tips",
+      "authorName": "Sarah Jenkins (RD)",
+      "content": "🥗 Nutrition Tip: When prepping Mediterranean bowls, cold-pressed extra virgin olive oil provides oleocanthal, a natural anti-inflammatory polyphenol. Pair it with dark leafy greens to boost fat-soluble vitamin absorption (A, D, E, K)!",
+      "createdAt": "2026-10-27T23:18:07.893Z",
+      "tag": "Nutrition Tip"
+    },
+    {
+      "id": "msg-05",
+      "roomId": "room-allergy-shield",
+      "authorName": "Elena Rostova",
+      "content": "🔒 Private advisory: Always check bulk bakery items for unlisted sesame oil or peanut flour aerosols. A reminder that FALCPA requires explicit labeling on packaged foods, but restaurant kitchens can have cross-contact.",
+      "createdAt": "2026-10-28T01:18:07.893Z",
+      "tag": "Safety Alert"
+    },
+    {
+      "roomId": "room-safety-alerts",
+      "authorName": "Lab Technician",
+      "content": "Database connection verified and operational. Test message logged.",
+      "tag": "Safety Alert",
+      "isAlertCard": false,
+      "id": "msg-mvrnyvo9-rmnp",
+      "createdAt": "2026-10-28T05:18:27.801Z"
+    }
+  ],
+  "contamination_reports": [
+    {
+      "id": "rep-001",
+      "foodItem": "Wild Foraged Forest Mushrooms (Chanterelle Lookalike)",
+      "location": "Pacific Northwest Local Market",
+      "contaminantType": "Amanita Phalloides (Amatoxins)",
+      "reportedAt": "2026-10-28T00:18:07.893Z",
+      "verified": true,
+      "notes": "Severe liver toxin detected by rapid chromatographic strip and AI vision.",
+      "severity": "critical"
+    },
+    {
+      "id": "rep-002",
+      "foodItem": "Unpasteurized Fresh Raw Almond Milk Batch 449",
+      "location": "Metro Grocery Hub, Austin TX",
+      "contaminantType": "Salmonella enterica serotype Enteritidis",
+      "reportedAt": "2026-10-27T11:18:07.893Z",
+      "verified": true,
+      "notes": "Voluntary vendor withdrawal following elevated plate counts.",
+      "severity": "high"
+    },
+    {
+      "id": "rep-003",
+      "foodItem": "Imported Dried Apricots with Unlabeled Sulfites",
+      "location": "National Distribution Centers",
+      "contaminantType": "Excess Sulfur Dioxide (2800 ppm, limit 2000 ppm)",
+      "reportedAt": "2026-10-26T11:18:07.893Z",
+      "verified": true,
+      "notes": "High risk of bronchospasm in asthmatic individuals.",
+      "severity": "medium"
+    }
+  ],
+  "user_profiles": {
+    "default_user": {
+      "name": "Alex Mercer",
+      "age": 32,
+      "weightKg": 72,
+      "heightCm": 178,
+      "gender": "male",
+      "dietaryPreference": "omnivore",
+      "healthGoal": "general_wellness",
+      "allergies": [
+        "Shellfish"
+      ],
+      "dailyCalorieTarget": 2200,
+      "dailySodiumMaxMg": 2300,
+      "updatedAt": "2026-10-28T05:18:07.893Z"
+    }
+  },
+  "subscriptions": {
+    "supersoftfirm@gmail.com": {
+      "plan": "Pro",
+      "billingCycle": "annual",
+      "status": "active",
+      "transactionId": "ch_stripe_umyl4sqnd5",
+      "features": [
+        "Unlimited Real-Time AI Poison Scans",
+        "Forensic Chemical Formula & PPM Quantification",
+        "Blockchain Provenance Verification",
+        "Continuous Spoilage & Microbe Tracking",
+        "Exportable PDF/JSON Clinical Reports"
+      ],
+      "userEmail": "supersoftfirm@gmail.com",
+      "activatedAt": "2026-10-28T05:18:43.774Z",
+      "expiresAt": "2026-11-27T05:18:43.774Z"
+    }
+  },
+  "system_audit_logs": [
+    {
+      "id": "audit-mvrnzoq7",
+      "action": "INSERT_SCAN",
+      "timestamp": "2026-10-28T05:19:05.455Z",
+      "details": "Saved forensic scan: Pacific Salmon & Mediterranean Quinoa Bowl (Score: 96)"
+    },
+    {
+      "id": "audit-mvrnz7zy",
+      "action": "ACTIVATE_SUBSCRIPTION",
+      "timestamp": "2026-10-28T05:18:43.774Z",
+      "details": "Plan Pro activated for supersoftfirm@gmail.com"
+    },
+    {
+      "id": "audit-01",
+      "action": "DATABASE_BOOTSTRAP",
+      "timestamp": "2026-10-28T05:18:07.893Z",
+      "details": "NutriGuard Full-Stack Relational JSON Database initialized with integrity checksums."
+    }
+  ]
+}
