@@ -287,21 +287,23 @@ export const ScannerUploader: React.FC<ScannerUploaderProps> = ({
             </p>
 
             {/* Quick Action buttons */}
-            <div className="flex flex-wrap items-center justify-center gap-2.5 mt-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mt-4 w-full max-w-xs px-2">
               <button
+                type="button"
                 onClick={startCamera}
-                className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-xs shadow-md shadow-emerald-500/20 transition-all active:scale-95"
+                className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs shadow-md shadow-emerald-500/20 transition-all active:scale-95 min-h-[44px]"
               >
                 <Camera className="w-4 h-4" />
-                <span>Open Camera</span>
+                <span>Take Photo / Camera</span>
               </button>
 
               <button
+                type="button"
                 onClick={() => fileInputRef.current?.click()}
-                className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-750 text-slate-200 font-medium text-xs border border-slate-700 transition-all active:scale-95"
+                className="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-750 text-slate-200 font-semibold text-xs border border-slate-700 transition-all active:scale-95 min-h-[44px]"
               >
                 <Upload className="w-4 h-4" />
-                <span>Upload Photo</span>
+                <span>Upload Image</span>
               </button>
             </div>
           </div>
@@ -322,16 +324,16 @@ export const ScannerUploader: React.FC<ScannerUploaderProps> = ({
         )}
       </div>
 
-      {/* Preset Fast-Select Row */}
-      <div className="mt-4">
-        <div className="flex items-center justify-between mb-2">
-          <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">
+      {/* Preset Fast-Select Row (Responsive horizontal scroll on mobile, grid on desktop) */}
+      <div className="mt-3.5">
+        <div className="flex items-center justify-between mb-1.5 px-0.5">
+          <span className="text-[10px] sm:text-[11px] font-semibold text-slate-400 uppercase tracking-wider">
             Quick Food Tests
           </span>
-          <span className="text-[11px] text-slate-500">Tap to load test scenario</span>
+          <span className="text-[10px] text-slate-500">Tap to load sample scenario</span>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+        <div className="flex sm:grid sm:grid-cols-4 gap-2 overflow-x-auto no-scrollbar pb-1">
           {SAMPLE_PRESETS.map((preset) => {
             const isSelected = selectedPresetId === preset.id;
             return (
@@ -339,13 +341,13 @@ export const ScannerUploader: React.FC<ScannerUploaderProps> = ({
                 key={preset.id}
                 type="button"
                 onClick={() => selectPreset(preset)}
-                className={`p-2 rounded-xl border text-left transition-all flex items-start gap-2 ${
+                className={`p-2.5 rounded-xl border text-left transition-all flex items-center sm:items-start gap-2.5 shrink-0 sm:shrink min-w-[190px] sm:min-w-0 ${
                   isSelected
                     ? 'bg-emerald-500/10 border-emerald-500/60 ring-1 ring-emerald-500/30'
                     : 'bg-slate-950/50 border-slate-800 hover:border-slate-700'
                 }`}
               >
-                <span className="text-xl shrink-0 mt-0.5">{preset.svgIcon}</span>
+                <span className="text-2xl shrink-0">{preset.svgIcon}</span>
                 <div className="min-w-0 flex-1">
                   <p className="text-xs font-semibold text-slate-200 truncate">{preset.name}</p>
                   <p

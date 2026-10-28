@@ -21,6 +21,7 @@ import { BottomNavBar } from './components/BottomNavBar';
 import { TrialBanner } from './components/TrialBanner';
 import { StellarPaywallModal } from './components/StellarPaywallModal';
 import { AdminDashboardModal } from './components/AdminDashboardModal';
+import { ScanVerdictHero, ResultCategoryTab } from './components/ScanVerdictHero';
 import {
   FoodAnalysisResult,
   AnalysisMode,
@@ -168,6 +169,25 @@ export default function App() {
     setActiveMode(mode);
   };
 
+  const getActiveTabFromMode = (mode: SliderMode): ResultCategoryTab => {
+    if (mode === 'poison' || mode === 'spoilage') return 'safety';
+    if (mode === 'ingredients') return 'ingredients';
+    if (mode === 'nutrition') return 'nutrition';
+    if (mode === 'health') return 'health';
+    if (mode === 'blockchain' || mode === 'water') return 'traceability';
+    return 'safety';
+  };
+
+  const activeResultTab = getActiveTabFromMode(activeMode);
+
+  const handleSelectResultTab = (tab: ResultCategoryTab) => {
+    if (tab === 'safety') setActiveMode('poison');
+    else if (tab === 'ingredients') setActiveMode('ingredients');
+    else if (tab === 'nutrition') setActiveMode('nutrition');
+    else if (tab === 'health') setActiveMode('health');
+    else if (tab === 'traceability') setActiveMode('blockchain');
+  };
+
   const handleBottomTabSelect = (tab: 'scan' | 'radar' | 'history' | 'profile') => {
     setActiveBottomTab(tab);
     if (tab === 'radar') setIsAlertsOpen(true);
@@ -254,62 +274,49 @@ export default function App() {
             />
           </div>
 
-          {/* Analysis Results Display */}
+          {/* Analysis Results Display with Unified Verdict Hero and Segmented Mobile Tabs */}
           {currentAnalysis && (
-            <div className="space-y-5">
-              {/* Context Summary Header */}
-              <div className="flex items-center justify-between px-1">
-                <div className="flex items-center gap-2">
-                  <span className="text-xs font-bold text-slate-300 uppercase tracking-wider">
-                    Scan Report
-                  </span>
-                  <span className="text-xs text-slate-500">·</span>
-                  <span className="text-xs text-slate-400 truncate max-w-[200px]">
-                    {currentAnalysis.foodName}
-                  </span>
-                </div>
+            <div className="space-y-4">
+              <ScanVerdictHero
+                analysis={currentAnalysis}
+                activeTab={activeResultTab}
+                onSelectTab={handleSelectResultTab}
+                onOpenEmergency={() => setIsEmergencyOpen(true)}
+                onOpenChat={() => setIsChatOpen(true)}
+              />
 
-                <div className="flex items-center gap-3">
-                  <button
-                    onClick={() => setIsChatOpen(true)}
-                    className="text-xs text-emerald-400 hover:text-emerald-300 font-semibold flex items-center gap-1"
-                  >
-                    <span>Google Chat</span>
-                  </button>
-                  <span className="text-slate-600">·</span>
-                  <div className="flex items-center gap-1.5 text-[11px] text-slate-500 font-mono">
-                    <Lock className="w-3 h-3 text-emerald-400" />
-                    <span>Encrypted</span>
-                  </div>
+              {/* Tab Category Content */}
+              {activeResultTab === 'safety' && (
+                <div className="space-y-4">
+                  <PoisonAnalysisCard
+                    poison={currentAnalysis.poisonAnalysis}
+                    foodName={currentAnalysis.foodName}
+                    safetyScore={currentAnalysis.safetyScore}
+                    onOpenEmergency={() => setIsEmergencyOpen(true)}
+                    onOpenChat={() => setIsChatOpen(true)}
+                  />
+                  <SpoilageCard
+                    spoilage={currentAnalysis.spoilageAndExpiry}
+                    foodName={currentAnalysis.foodName}
+                  />
                 </div>
-              </div>
-
-              {/* Dynamic rendering based on active slider mode or comprehensive stack */}
-              {activeMode === 'poison' && (
-                <PoisonAnalysisCard
-                  poison={currentAnalysis.poisonAnalysis}
-                  foodName={currentAnalysis.foodName}
-                  safetyScore={currentAnalysis.safetyScore}
-                  onOpenEmergency={() => setIsEmergencyOpen(true)}
-                  onOpenChat={() => setIsChatOpen(true)}
-                />
               )}
 
-              {activeMode === 'ingredients' && (
+              {activeResultTab === 'ingredients' && (
                 <IngredientCard
                   ingredientData={currentAnalysis.ingredientAnalysis}
                   foodName={currentAnalysis.foodName}
                 />
               )}
 
-              {activeMode === 'nutrition' && (
+              {activeResultTab === 'nutrition' && (
                 <NutritionCard
                   nutrition={currentAnalysis.nutritionalAnalysis}
                   userProfile={userProfile}
                 />
               )}
 
-              {activeMode === 'health' && (
+              {activeResultTab === 'health' && (
                 <HealthAdviceCard
                   advice={currentAnalysis.personalizedHealthAdvice}
                   foodResult={currentAnalysis}
@@ -317,100 +324,18 @@ export default function App() {
                 />
               )}
 
-              {activeMode === 'spoilage' && (
-                <SpoilageCard
-                  spoilage={currentAnalysis.spoilageAndExpiry}
-                  foodName={currentAnalysis.foodName}
-                />
-              )}
-
-              {activeMode === 'water' && (
-                <WaterQualityCard
-                  waterData={currentAnalysis.waterOrLiquidQuality}
-                />
-              )}
-
-              {activeMode === 'blockchain' && (
-                <BlockchainCard
-                  traceability={currentAnalysis.blockchainTraceability}
-                />
-              )}
-
-              {/* Secondary Quick Accordion/Overview for Other Dimensions */}
-              <div className="pt-4 border-t border-slate-850">
-                <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-3 px-1">
-                  Full Multimodal Diagnostics
-                </span>
-
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-                  {/* Poison Status */}
-                  <button
-                    onClick={() => setActiveMode('poison')}
-                    className={`p-3 rounded-2xl border text-left transition ${
-                      activeMode === 'poison'
-                        ? 'bg-rose-500/10 border-rose-500/50 ring-1 ring-rose-500/30'
-                        : 'bg-slate-900/60 border-slate-800 hover:border-slate-700'
-                    }`}
-                  >
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="text-[10px] text-slate-400 uppercase">Toxicity</span>
-                      {currentAnalysis.poisonAnalysis.detected ? (
-                        <ShieldAlert className="w-3.5 h-3.5 text-rose-400" />
-                      ) : (
-                        <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
-                      )}
-                    </div>
-                    <p className={`font-bold text-xs truncate ${currentAnalysis.poisonAnalysis.detected ? 'text-rose-400' : 'text-emerald-400'}`}>
-                      {currentAnalysis.poisonAnalysis.detected ? 'Hazard Detected' : 'Pure / Safe'}
-                    </p>
-                  </button>
-
-                  {/* Ingredients */}
-                  <button
-                    onClick={() => setActiveMode('ingredients')}
-                    className={`p-3 rounded-2xl border text-left transition ${
-                      activeMode === 'ingredients'
-                        ? 'bg-amber-500/10 border-amber-500/50 ring-1 ring-amber-500/30'
-                        : 'bg-slate-900/60 border-slate-800 hover:border-slate-700'
-                    }`}
-                  >
-                    <span className="text-[10px] text-slate-400 uppercase block mb-1">Ingredients</span>
-                    <p className="font-bold text-xs text-slate-200">
-                      {currentAnalysis.ingredientAnalysis?.ingredients?.length || 0} Identified
-                    </p>
-                  </button>
-
-                  {/* Nutrition */}
-                  <button
-                    onClick={() => setActiveMode('nutrition')}
-                    className={`p-3 rounded-2xl border text-left transition ${
-                      activeMode === 'nutrition'
-                        ? 'bg-emerald-500/10 border-emerald-500/50 ring-1 ring-emerald-500/30'
-                        : 'bg-slate-900/60 border-slate-800 hover:border-slate-700'
-                    }`}
-                  >
-                    <span className="text-[10px] text-slate-400 uppercase block mb-1">Calories</span>
-                    <p className="font-bold text-xs text-slate-200 tabular-nums">
-                      {currentAnalysis.nutritionalAnalysis?.calories || 0} kcal
-                    </p>
-                  </button>
-
-                  {/* Spoilage */}
-                  <button
-                    onClick={() => setActiveMode('spoilage')}
-                    className={`p-3 rounded-2xl border text-left transition ${
-                      activeMode === 'spoilage'
-                        ? 'bg-orange-500/10 border-orange-500/50 ring-1 ring-orange-500/30'
-                        : 'bg-slate-900/60 border-slate-800 hover:border-slate-700'
-                    }`}
-                  >
-                    <span className="text-[10px] text-slate-400 uppercase block mb-1">Freshness</span>
-                    <p className="font-bold text-xs text-emerald-400">
-                      {currentAnalysis.spoilageAndExpiry?.daysUntilExpiry || 0}d Shelf Life
-                    </p>
-                  </button>
+              {activeResultTab === 'traceability' && (
+                <div className="space-y-4">
+                  <BlockchainCard
+                    traceability={currentAnalysis.blockchainTraceability}
+                  />
+                  {currentAnalysis.waterOrLiquidQuality && (
+                    <WaterQualityCard
+                      waterData={currentAnalysis.waterOrLiquidQuality}
+                    />
+                  )}
                 </div>
-              </div>
+              )}
             </div>
           )}
         </div>
